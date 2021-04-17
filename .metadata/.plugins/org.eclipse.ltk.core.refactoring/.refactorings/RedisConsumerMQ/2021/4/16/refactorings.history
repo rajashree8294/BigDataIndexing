@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename compilation unit &apos;com.info7255.messageQueue.ConsumerMessageQueue.java&apos; to &apos;SubscribeMessageQueue.java&apos;&#x0A;- Original project: &apos;RedisConsumerMQ&apos;&#x0A;- Original element: &apos;com.info7255.messageQueue.ConsumerMessageQueue.java&apos;&#x0A;- Renamed element: &apos;com.info7255.messageQueue.SubscribeMessageQueue.java&apos;" description="Rename compilation unit &apos;ConsumerMessageQueue.java&apos;" flags="2" id="org.eclipse.jdt.ui.rename.compilationunit" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.info7255.messageQueue{ConsumerMessageQueue.java" name="SubscribeMessageQueue.java" references="false" stamp="1618637277925" version="1.0"/>
+</session>

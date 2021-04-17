@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="expressionHistory">
+	</section>
+	<section name="org.eclipse.jdt.internal.debug.ui.ExpressionInformationControlCreator$ExpressionInformationControl">
+		<item key="WIDTH" value="706"/>
+		<item key="HEIGHT" value="210"/>
+		<item key="SashWeightTree" value="500"/>
+		<item key="SashWeightDetails" value="500"/>
+	</section>
+	<section name="org.eclipse.jdt.debug.ui.MAIN_METHOD_SELECTION_DIALOG">
+		<item key="ShowStatusLine" value="true"/>
+		<item key="History" value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode&gt;&#x0A;&lt;infoNode&gt;=RedisConsumerMQ/\/home\/rajashree\/.m2\/repository\/org\/apache\/lucene\/lucene-core\/8.2.0\/lucene-core-8.2.0.jar=/maven.pomderived=/true=/=/maven.pomderived=/true=/=/maven.groupId=/org.apache.lucene=/=/maven.artifactId=/lucene-core=/=/maven.version=/8.2.0=/=/maven.scope=/compile=/&amp;lt;org.apache.lucene.index(CheckIndex.class[CheckIndex&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=RedisConsumerMQ/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&amp;lt;com.info7255.messageQueue{ConsumerMessageQueue.java[ConsumerMessageQueue&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=RedisConsumerMQ/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&amp;lt;com.info7255.messageQueue{SubscribeMessageQueue.java[SubscribeMessageQueue&lt;/infoNode&gt;&#x0A;&lt;/historyRootNode&gt;&#x0A;&lt;/History&gt;"/>
+		<section name="DialogBoundsSettings">
+			<item key="DIALOG_HEIGHT" value="500"/>
+			<item key="DIALOG_WIDTH" value="600"/>
+			<item key="DIALOG_X_ORIGIN" value="629"/>
+			<item key="DIALOG_Y_ORIGIN" value="194"/>
+			<item key="DIALOG_FONT_NAME" value="1|Ubuntu|11.0|0|GTK|1|"/>
+		</section>
+	</section>
+</section>

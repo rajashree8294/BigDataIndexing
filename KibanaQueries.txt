@@ -1,0 +1,222 @@
+GET _search
+{
+  "query": {
+    "match_all": {}
+  }
+}
+
+DELETE planindex
+
+GET planindex/_mapping
+
+PUT planindex
+{
+  "mappings": {
+    "properties": {
+      "objectId": {
+        "type" : "keyword"
+      },
+      "plan_service" : {
+        "type": "join",
+        "relations" : {
+          "plan":["membercostshare", "planservice"],
+          "planservice":["service", "planservice_membercostshare"]
+        }
+      }
+    }
+  }
+}
+
+GET planindex/_search
+{
+  "query":{
+    "match": {
+      "objectId": "12xvxc345ssdsds-500"
+    }
+  }
+}
+
+GET planindex/_search
+{
+  "query": {
+    "bool": {
+        "must": {
+          "bool": {
+            "must": [
+              {"match": {"copay":23}},
+              {"match": {"deductible": 2000}}
+            ]
+          }
+        }
+      }
+  }
+}
+
+
+GET planindex/_search
+{
+  "query": {
+    "has_child": {
+      "type": "membercostshare",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "match": {
+                "objectId": "1234vxc2324sdf-501"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
+
+GET planindex/_search
+{
+  "query": {
+    "has_child": {
+      "type": "planservice",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "match": {
+                "objectId": "27283xvx9asdff-504"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
+
+GET planindex/_search
+{
+  "query": {
+    "has_child": {
+      "type": "planservice",
+      "query": {
+        "has_child": {
+          "type": "service",
+          "query": {
+            "match": {
+                "objectId": "1234520xvc30asdf-502"
+              }
+          }
+        }
+      }
+    }
+  }
+}
+
+GET planindex/_search
+{
+  "query": {
+    "has_child": {
+      "type": "planservice_membercostshare",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "match": {
+                "copay": "175"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
+
+GET planindex/_search
+{
+  "query": {
+    "has_child": {
+      "type": "planservice_membercostshare",
+      "query": {
+        "range": {
+          "copay": {
+            "gte": "123"
+          }
+        }
+      }
+    }
+  }
+}
+
+GET planindex/_search
+{
+  "query": {
+    "has_child": {
+      "type": "membercostshare",
+      "query": {
+        "range": {
+          "copay": {
+            "gte": "13"
+          }
+        }
+      }
+    }
+  }
+}
+
+GET planindex/_search
+{
+  "query": {
+    "has_parent": {
+      "parent_type": "plan",
+      "query": {
+        "bool": {
+          "must": [
+            {
+              "match": {
+                "objectId": "12xvxc345ssdsds-500"
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
+
+GET planindex/_search
+{
+  "query": {
+    "has_parent": {
+      "parent_type": "planservice",
+      "query": {
+        "has_parent": {
+          "parent_type": "plan",
+          "query": {
+            "match": {
+                "objectId": "12xvxc345ssdsds-500"
+              }
+          }
+        }
+      }
+    }
+  }
+}
+
+GET planindex/_search
+{
+  "query": {
+    "match_all": {
+      
+    }
+  }
+}
+
+
+GET planindex/_mapping
+
+DELETE planindex
+
+GET /_cat/indices
+
+GET _cluster/health
